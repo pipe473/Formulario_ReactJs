@@ -35,6 +35,7 @@ const Formulario = () => {
                     name="propietario"
                     className="u-full-width"
                     placeholder="Nombre Dueño de la mascota"
+                    onChange={actualizarState}
                 />
 
                 <label>Fecha</label>
@@ -42,6 +43,7 @@ const Formulario = () => {
                     type="date"
                     name="fecha"
                     className="u-full-width"
+                    onChange={actualizarState}
                 />
 
                 <label>Hora</label>
@@ -49,12 +51,14 @@ const Formulario = () => {
                     type="time"
                     name="hora"
                     className="u-full-width"
+                    onChange={actualizarState}
                 />
 
                 <label>Síntomas</label>
                 <textarea
                     className="u-full-width"
                     name="sintomas"
+                    onChange={actualizarState}
                 ></textarea>
 
                 <button

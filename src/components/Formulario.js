@@ -11,6 +11,11 @@ const Formulario = () => {
         sintomas: ''
     });
 
+    // Función que se ejecuta cada que el usuario escribe en un input
+    const actualizarState = () => {
+        console.log('escribiendo...');        
+    }
+
     return ( 
         <Fragment>
             <h2>Crear Cita</h2>
@@ -22,6 +27,7 @@ const Formulario = () => {
                     name="mascota"
                     className="u-full-width"
                     placeholder="Nombre Mascota"
+                    onChange={actualizarState}
                 />
                 <label>Nombre Dueño</label>
                 <input 

@@ -11,6 +11,8 @@ const Formulario = () => {
         sintomas: ''
     });
 
+    const [ error, actualizarError ] = useState(false);
+
     // Función que se ejecuta cada que el usuario escribe en un input
     const actualizarState = e => {
         actualizarCita({
@@ -29,12 +31,9 @@ const Formulario = () => {
         // Validar
         if(mascota.trim() === ''|| propietario.trim() === ''|| fecha.trim() === ''||
         hora.trim() === ''|| sintomas.trim() === '' ){
-            console.log('Hay un error');
+            actualizarError(true);
            return;
-        }
-
-        console.log('agregando...');
-        
+        }        
 
         // Asignar un ID
 
@@ -47,6 +46,9 @@ const Formulario = () => {
     return ( 
         <Fragment>
             <h2>Crear Cita</h2>
+
+            { error ? <p className="alerta-error">Todos los campos son obligatorios</p> 
+              : null }
 
             <form 
                 onSubmit={submitCita}

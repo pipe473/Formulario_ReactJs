@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Formulario = () => {
     return ( 
-        <h1>Desde Formulario</h1>
+        <Fragment>
+            <h2>Crear Cita</h2>
+
+            <form>
+                <label>Nombre Mascota</label>
+                <input 
+                    type="text"
+                    name="mascota"
+                    className="u-full-with"
+                    placeholder="Nombre Mascota"
+                />
+            </form>
+        </Fragment>
      );
 }
  

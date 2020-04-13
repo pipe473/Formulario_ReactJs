@@ -35,6 +35,12 @@ const Formulario = () => {
                     className="u-full-width"
                 />
 
+                <label>Síntomas</label>
+                <textarea
+                    className="u-full-width"
+                    name="sintomas"
+                ></textarea>
+
 
             </form>
         </Fragment>

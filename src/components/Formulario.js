@@ -28,6 +28,13 @@ const Formulario = () => {
                     className="u-full-width"
                 />
 
+                <label>Hora</label>
+                <input 
+                    type="time"
+                    name="hora"
+                    className="u-full-width"
+                />
+
 
             </form>
         </Fragment>

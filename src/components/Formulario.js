@@ -23,8 +23,11 @@ const Formulario = () => {
     const { mascota, propietario, fecha, hora, sintomas } = cita;
 
     // Cuando el usuario presiona agregar cita
-    const submitCita = () => {
-        alert('Enviando')
+    const submitCita = e => {
+        e.preventDefault();
+
+        console.log('enviando form');
+        
     }
 
     return ( 

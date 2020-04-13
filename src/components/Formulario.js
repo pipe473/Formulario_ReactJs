@@ -1,6 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 const Formulario = () => {
+
+    // Crear State de citas
+    const [cita, actualizarCita] = useState({
+        
+    })
+
     return ( 
         <Fragment>
             <h2>Crear Cita</h2>

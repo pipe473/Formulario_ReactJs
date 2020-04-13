@@ -26,8 +26,22 @@ const Formulario = () => {
     const submitCita = e => {
         e.preventDefault();
 
-        console.log('enviando form');
+        // Validar
+        if(mascota.trim() === ''|| propietario.trim() === ''|| fecha.trim() === ''||
+        hora.trim() === ''|| sintomas.trim() === '' ){
+            console.log('Hay un error');
+           return;
+        }
+
+        console.log('agregando...');
         
+
+        // Asignar un ID
+
+        // Crear la cita
+
+        // Reiniciar el form
+
     }
 
     return ( 

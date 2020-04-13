@@ -21,6 +21,13 @@ const Formulario = () => {
                     placeholder="Nombre Dueño de la mascota"
                 />
 
+                <label>Fecha</label>
+                <input 
+                    type="date"
+                    name="fecha"
+                    className="u-full-width"
+                />
+
 
             </form>
         </Fragment>

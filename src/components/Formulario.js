@@ -12,8 +12,8 @@ const Formulario = () => {
     });
 
     // Función que se ejecuta cada que el usuario escribe en un input
-    const actualizarState = () => {
-        console.log('escribiendo...');        
+    const actualizarState = e => {
+        console.log(e.target.name);        
     }
 
     return ( 

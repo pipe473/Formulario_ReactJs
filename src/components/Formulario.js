@@ -13,7 +13,7 @@ const Formulario = () => {
 
     // Función que se ejecuta cada que el usuario escribe en un input
     const actualizarState = e => {
-        console.log(e.target.name);        
+        console.log(e.target.value);        
     }
 
     return ( 

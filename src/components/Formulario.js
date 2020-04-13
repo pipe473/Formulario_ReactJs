@@ -4,8 +4,12 @@ const Formulario = () => {
 
     // Crear State de citas
     const [cita, actualizarCita] = useState({
-        
-    })
+        mascota: '',
+        propietario: '',
+        fecha: '',
+        hora: '',
+        sintomas: ''
+    });
 
     return ( 
         <Fragment>

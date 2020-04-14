@@ -36,6 +36,9 @@ const Formulario = () => {
         }        
 
         // Asignar un ID
+        cita.id = 20;
+        console.log(cita);
+        
 
         // Crear la cita
 

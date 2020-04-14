@@ -35,6 +35,9 @@ const Formulario = () => {
            return;
         }        
 
+        // Eliminar el mensaje previo
+        actualizarError(false);
+
         // Asignar un ID
         cita.id = 20;
         console.log(cita);

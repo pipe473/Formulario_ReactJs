@@ -1,7 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Formulario from './components/Formulario';
 
 function App () {
+
+// Arreglo de citas
+const [citas, guardarCitas] = useState([]);
+
   return (
     <Fragment>
       <h1>Administrador de pacientes</h1>

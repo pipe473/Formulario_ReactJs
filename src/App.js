@@ -26,7 +26,10 @@ const crearCita = cita => {
               />
           </div>
           <div className="one-half column">
-              2
+              <h2>Administra tus citas</h2>
+              {citas.map(cita => (
+                <Cita />
+              ))}
           </div>
         </div>
       </div>

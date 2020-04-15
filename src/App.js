@@ -17,8 +17,8 @@ const crearCita = cita => {
 
 // Funcion que elimina un cita por su id
 const eliminarCita = id => {
-  console.log(id);
-  
+  const nuevasCitas = citas.filter(cita => cita.id !== id)
+  guardarCitas(nuevasCitas);
 }
 
   return (

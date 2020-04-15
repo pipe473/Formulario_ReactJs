@@ -21,6 +21,10 @@ const eliminarCita = id => {
   guardarCitas(nuevasCitas);
 }
 
+// Mensaje condicional
+console.log(citas.length);
+
+
   return (
     <Fragment>
       <h1>Administrador de pacientes</h1>

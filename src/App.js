@@ -22,7 +22,7 @@ const eliminarCita = id => {
 }
 
 // Mensaje condicional
-console.log(citas.length);
+const titulo = citas.length === 0 ? 'No hay citas pendientes' : 'Administrar citas';
 
 
   return (
@@ -37,7 +37,7 @@ console.log(citas.length);
               />
           </div>
           <div className="one-half column">
-              <h2>Administra tus citas</h2>
+            <h2>{titulo}</h2>
               {citas.map(cita => (
                 <Cita 
                 key={cita.id}

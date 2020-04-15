@@ -15,6 +15,12 @@ const crearCita = cita => {
   ]);
 }
 
+// Funcion que elimina un cita por su id
+const eliminarCita = id => {
+  console.log(id);
+  
+}
+
   return (
     <Fragment>
       <h1>Administrador de pacientes</h1>
@@ -32,6 +38,7 @@ const crearCita = cita => {
                 <Cita 
                 key={cita.id}
                 cita={cita}
+                eliminarCita={eliminarCita}
                 />
               ))}
           </div>

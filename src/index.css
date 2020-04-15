@@ -75,6 +75,8 @@ input[type="time"] {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
+/* Boton de eliminar Citas */
 .button.eliminar,
 .button.eliminar:hover {
   background-color: #c10059;

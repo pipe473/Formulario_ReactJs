@@ -6,7 +6,14 @@ const Cita = ({cita}) => (
         <p>Dueño: <span>{cita.propietario}</span></p>
         <p>Fecha: <span>{cita.fecha}</span></p>
         <p>Sintomas: <span>{cita.sintomas}</span></p>
+
+
+        <button
+            className="button eliminar u-full-width"
+            // onClick={}
+        >Eliminar &times;</button>
     </div>
+
  );
  
 export default Cita;

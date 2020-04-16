@@ -4,6 +4,12 @@ import Cita from './components/Cita';
 
 function App () {
 
+  // Citas en local storage
+  let citasIniciales = localStorage.getItem('citas'); 
+  if (!citasIniciales) {
+    citasIniciales = [];
+  }
+
 // Arreglo de citas
 const [citas, guardarCitas] = useState([]);
 

@@ -10,9 +10,8 @@ const [citas, guardarCitas] = useState([]);
 
 // Use Effect para realizar ciertas operaciones cuando el state cambia
 useEffect( () => {
-  console.log('Listo');
-  
-})
+  console.log('Documento listo o han habido modificaciones en las citas');  
+}, [citas] );
 
 // Funcion que tome las citas actuales y agregue la nueva
 const crearCita = cita => {
